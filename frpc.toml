@@ -1,0 +1,18 @@
+serverAddr = "8.134.148.109"
+serverPort = 5443
+
+auth.method = "token"
+auth.token = "lCWtjLgMyq8VEYZz"
+
+log.to = "enable"
+log.level = "info"
+log.maxDays = 3
+
+transport.tcpMux = true
+
+[[proxies]]
+name = "ssh"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 22
+remotePort = 35281
