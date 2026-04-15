@@ -1,0 +1,23 @@
+serverAddr = "8.134.148.109"
+serverPort = 5443
+
+auth.method = "token"
+auth.token = "lCWtjLgMyq8VEYZz"
+
+log.to = "console"
+log.level = "trace"
+log.maxDays = 3
+
+transport.protocol = "tcp"
+transport.tcpMux = true
+transport.tcpMuxKeepaliveInterval = 30
+transport.dialServerKeepalive = 60
+transport.heartbeatInterval = 30
+transport.heartbeatTimeout = 90
+
+[[proxies]]
+name = "ssh"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 22
+remotePort = 35281
